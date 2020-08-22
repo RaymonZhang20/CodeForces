@@ -1,13 +1,18 @@
 import sys
 input = sys.stdin.readline
+
 def inInt():
     return int(input())
+
 def inStr():
     return input().strip("\n")
+
 def inIList():
     return(list(map(int,input().split())))
+
 def inSList():
     return(input().split())
+
 def bsearch(nums, target):
     N = len(nums or [])
     l = 0
@@ -23,6 +28,9 @@ def bsearch(nums, target):
             return (None, mid, None)
 
     return (r if r >= 0 else None, None, l if l <= N-1 else None)
+
+def yesOrNo(val):
+    print("YES" if val else "NO")
 
 
 def solve():
