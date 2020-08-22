@@ -9,7 +9,7 @@ def inIList():
 def inSList():
     return(input().split())
 def bsearch(nums, target):
-    N = len(nums)
+    N = len(nums or [])
     l = 0
     r = N - 1
 
