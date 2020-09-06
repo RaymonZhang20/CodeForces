@@ -31,6 +31,11 @@ def bsearch(nums, target):
 
 def yesOrNo(val):
     print("YES" if val else "NO")
+    
+def printSpacedArray(nums):
+    for x in nums:
+        print(x, end = " ")
+    print()
 
 
 def solve():
